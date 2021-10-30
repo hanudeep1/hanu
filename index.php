@@ -55,6 +55,7 @@ if(isset($_POST['name'])){
     <div class="container">
         <h1>WELCOME TO UNKNOWN TRIP</h3>
         <p>Enter your details and submit this form to confirm your participation in this unknown trip </p>
+        
         <?php
         if($insert == true){
         echo "<p class='submitMsg'>Thanks for submitting your form. We are happy to see you joining us for the Unknown trip</p>";
@@ -68,8 +69,10 @@ if(isset($_POST['name'])){
             <input type="phone" name="phone" id="phone" placeholder="Enter your phone">
             <textarea name="destination" id="destination" cols="30" rows="10" placeholder="Enter destination"></textarea>
             <button class="btn">Submit</button> 
+            <a href="display.php">SEARCH</a>
         </form>
     </div>
+    
     <script src="index.js"></script>
     
 </body>
